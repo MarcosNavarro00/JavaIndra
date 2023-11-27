@@ -1,0 +1,3 @@
+Ciudad{nombre='Madrid', poblacion=1, superficie=1.0, Proyección habitantes 2030 = 0.9, Superficie total ocupada = 1001.0}
+Ciudad{nombre='Barcelona', poblacion=2, superficie=2.0, Proyección habitantes 2030 = 1.8, Superficie total ocupada = 1002.0}
+Ciudad{nombre='Sevilla', poblacion=3, superficie=3.0, Proyección habitantes 2030 = 2.7, Superficie total ocupada = 1003.0}
