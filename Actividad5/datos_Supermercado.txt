@@ -1,0 +1,31 @@
+
+Nombre del producto: Leche
+Precio del Producto: 1.45
+Precio con descuento: 1.0875
+Fecha de Caducidad: Thu Nov 16 00:00:00 CET 2023
+Días hasta la caducidad: 1
+---------------------------------------------
+Nombre del producto: Aguacate
+Precio del Producto: 1.0
+Precio con descuento: 0.75
+Fecha de Caducidad: Sat Nov 11 00:00:00 CET 2023
+Días hasta la caducidad: El producto ya está caducado
+---------------------------------------------
+Nombre del producto: Queso 
+Precio del Producto: 3.21
+Precio con descuento: 2.4074999999999998
+Fecha de Caducidad: Mon Jan 01 00:00:00 CET 2024
+Días hasta la caducidad: 47
+---------------------------------------------
+Nombre del producto: Naranja
+Precio del Producto: 2.55
+Precio con descuento: 1.9124999999999999
+Fecha de Caducidad: Mon Nov 27 00:00:00 CET 2023
+Días hasta la caducidad: 12
+---------------------------------------------
+Nombre del producto: Sandia
+Precio del Producto: 7.88
+Precio con descuento: 5.91
+Fecha de Caducidad: Sun Dec 01 00:00:00 CET 2024
+Días hasta la caducidad: 382
+---------------------------------------------

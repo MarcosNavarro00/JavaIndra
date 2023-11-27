@@ -1,0 +1,11 @@
+Se trata de la persona: MarcosNavarro con edad 23 de la ciudad madrid en el puesto y area desa indra con una salario bruto de 13000.0 . Por lo cual con un salario neto de: 10400.0
+Se trata de la persona: marcosnavarro con edad 23 de la ciudad madrid en el puesto y area desa indra con una salario bruto de 13400.0 . Por lo cual con un salario neto de: 10720.0
+Se trata de la persona: juanase con edad 23 de la ciudad madrid en el puesto y area desa indra con una salario bruto de 15000.0 . Por lo cual con un salario neto de: 12000.0
+Se trata de la persona: mare con edad 23 de la ciudad mad en el puesto y area ae as con una salario bruto de 23433.0 . Por lo cual con un salario neto de: 18746.4
+Se trata de la persona: aesdd con edad 34 de la ciudad dr en el puesto y area dr rt con una salario bruto de 34322.0 . Por lo cual con un salario neto de: 27457.600000000002
+Se trata de la persona: esse con edad 45 de la ciudad yt en el puesto y area gh er con una salario bruto de 34322.0 . Por lo cual con un salario neto de: 27457.600000000002
+Se trata de la persona: juangomez con edad 34 de la ciudad mad en el puesto y area desa indra con una salario bruto de 34003.0 . Por lo cual con un salario neto de: 27202.4
+Se trata de la persona: albertorr con edad 32 de la ciudad mad en el puesto y area desa indra con una salario bruto de 32443.0 . Por lo cual con un salario neto de: 25954.4
+Se trata de la persona: luisrr con edad 55 de la ciudad mad en el puesto y area desa indra con una salario bruto de 54444.0 . Por lo cual con un salario neto de: 43555.200000000004
+Se trata de la persona: aaaa con edad 23 de la ciudad aa en el puesto y area aa aa con una salario bruto de 22.0 . Por lo cual con un salario neto de: 17.6
+Se trata de la persona: aaaa con edad 23 de la ciudad aa en el puesto y area aa aa con una salario bruto de 23.0 . Por lo cual con un salario neto de: 18.400000000000002
