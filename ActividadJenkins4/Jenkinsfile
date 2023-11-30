@@ -13,7 +13,7 @@ pipeline {
         stage('Solucion') {
             steps {
                 script {
-                    def sol = "Empleado{nombre='Marcos', puesto='Jefe', sueldo=26000.0, hEntrada=9, hSalida=17, nInfracciones=1, sueldoFinal=24700.0}"
+                    def sol = "Empleado{nombre='Marcos', puesto='Jefe', sueldo=30000.0, hEntrada=9, hSalida=17, nInfracciones=1, sueldoFinal=28500.0}Empleado{nombre='Juan', puesto='Ingeniero', sueldo=25000.0, hEntrada=8, hSalida=18, nInfracciones=1, sueldoFinal=21250.0}Empleado{nombre='Marga', puesto='CEO', sueldo=100000.0, hEntrada=8, hSalida=18, nInfracciones=1, sueldoFinal=99000.0}Empleado{nombre='Alberto', puesto='Analista', sueldo=30000.0, hEntrada=9, hSalida=17, nInfracciones=1, sueldoFinal=27000.0}Empleado{nombre='RRHH', puesto='RRHH', sueldo=15000.0, hEntrada=9, hSalida=17, nInfracciones=1, sueldoFinal=13650.0}"
                     echo "La solución es: ${sol}"
                     // Tu lógica adicional aquí
                 }

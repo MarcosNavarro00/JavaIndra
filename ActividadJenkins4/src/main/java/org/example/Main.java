@@ -125,23 +125,17 @@ public class Main {
 
 
         Empleado[] registroEmpleados = new Empleado[6];
+        String sol = "";
 
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 5; i++) {
             Empleado e1 = ask();
 
             double sFinal = e1.calcularInfraccion();
             int nInfracciones = e1.getnInfracciones();
             registroEmpleados[i] = e1;
             registroEmpleados[i].print();
-        }
-
-        String sol = "";
-
-        for (int i = 0; i < 1; i++) {
             sol += registroEmpleados[i].toString();
-
         }
-        System.out.println(sol);
 
         String jenkinsfileContent = generateJenkinsfile(sol);
 
