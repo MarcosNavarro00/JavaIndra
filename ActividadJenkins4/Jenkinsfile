@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'src/main/java/org/example/Main.java'
+                    sh 'java src/main/java/org/example/Main.java'
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
         stage('Run Java Program') {
             steps {
                 script {
-                    sh 'java InfraccionesSalariales'
+                    sh 'java src/main/java/org/example/Main.java'
                 }
             }
         }
