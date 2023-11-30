@@ -80,4 +80,17 @@ public class Empleado {
                 ", sueldoFinal=" + sueldoFinal +
                 '}');
     }
+
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "nombre='" + nombre + '\'' +
+                ", puesto='" + puesto + '\'' +
+                ", sueldo=" + sueldo +
+                ", hEntrada=" + hEntrada +
+                ", hSalida=" + hSalida +
+                ", nInfracciones=" + nInfracciones +
+                ", sueldoFinal=" + sueldoFinal +
+                '}';
+    }
 }

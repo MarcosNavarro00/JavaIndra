@@ -61,7 +61,7 @@ import java.util.Scanner;
 public class Main {
 
 
-    public static String generateJenkinsfile() {
+    public static String generateJenkinsfile(String sol) {
         StringBuilder jenkinsfile = new StringBuilder();
 
         jenkinsfile.append("pipeline {\n");
@@ -76,11 +76,21 @@ public class Main {
         jenkinsfile.append("                }\n");
         jenkinsfile.append("            }\n");
         jenkinsfile.append("        }\n");
+        jenkinsfile.append("        stage('Solucion') {\n");
+        jenkinsfile.append("            steps {\n");
+        jenkinsfile.append("                script {\n");
+        jenkinsfile.append("                    def sol = \"").append(sol).append("\"\n");
+        jenkinsfile.append("                    echo \"La solución es: ${sol}\"\n");
+        jenkinsfile.append("                    // Tu lógica adicional aquí\n");
+        jenkinsfile.append("                }\n");
+        jenkinsfile.append("            }\n");
+        jenkinsfile.append("        }\n");
         jenkinsfile.append("    }\n");
         jenkinsfile.append("}\n");
 
         return jenkinsfile.toString();
     }
+
 
     public static void writeToFile(String content, String fileName) throws IOException {
         try (FileWriter fileWriter = new FileWriter(fileName)) {
@@ -113,14 +123,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String jenkinsfileContent = generateJenkinsfile();
-
-        try {
-            writeToFile(jenkinsfileContent, "Jenkinsfile");
-            System.out.println("Jenkinsfile generado exitosamente.");
-        } catch (IOException e) {
-            System.err.println("Error al escribir el archivo Jenkinsfile: " + e.getMessage());
-        }
 
         Empleado[] registroEmpleados = new Empleado[6];
 
@@ -131,6 +133,24 @@ public class Main {
             int nInfracciones = e1.getnInfracciones();
             registroEmpleados[i] = e1;
             registroEmpleados[i].print();
+        }
+
+        String sol = "";
+
+        for (int i = 0; i < 1; i++) {
+            sol += registroEmpleados[i].toString();
+
+        }
+        System.out.println(sol);
+
+        String jenkinsfileContent = generateJenkinsfile(sol);
+
+
+        try {
+            writeToFile(jenkinsfileContent, "Jenkinsfile");
+            System.out.println("Jenkinsfile generado exitosamente.");
+        } catch (IOException e) {
+            System.err.println("Error al escribir el archivo Jenkinsfile: " + e.getMessage());
         }
 
     }

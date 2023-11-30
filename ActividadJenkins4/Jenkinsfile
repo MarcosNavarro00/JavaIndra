@@ -10,5 +10,14 @@ pipeline {
                 }
             }
         }
+        stage('Solucion') {
+            steps {
+                script {
+                    def sol = "Empleado{nombre='Marcos', puesto='Jefe', sueldo=26000.0, hEntrada=9, hSalida=17, nInfracciones=1, sueldoFinal=24700.0}"
+                    echo "La solución es: ${sol}"
+                    // Tu lógica adicional aquí
+                }
+            }
+        }
     }
 }
