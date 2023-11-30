@@ -1,27 +1,12 @@
 pipeline {
     agent any
-
     stages {
-        stage('Checkout') {
+        stage('Ejemplo') {
             steps {
                 script {
-                    git branch: 'rama/ActividadJenkins4', url: 'https://github.com/MarcosNavarro00/JavaIndra.git'
-                }
-            }
-        }
-
-        stage('Build') {
-            steps {
-                script {
-                    sh 'java src/main/java/org/example/Main.java'
-                }
-            }
-        }
-
-        stage('Run Java Program') {
-            steps {
-                script {
-                    sh 'java src/main/java/org/example/Main.java'
+                    def unidadBase = env.WORKSPACE
+                    echo "La unidad base es: ${unidadBase}"
+                    // Tu lógica adicional aquí
                 }
             }
         }

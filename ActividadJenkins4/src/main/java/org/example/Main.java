@@ -54,11 +54,39 @@ Entregable:
 
 package org.example;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
 
 
+    public static String generateJenkinsfile() {
+        StringBuilder jenkinsfile = new StringBuilder();
+
+        jenkinsfile.append("pipeline {\n");
+        jenkinsfile.append("    agent any\n");
+        jenkinsfile.append("    stages {\n");
+        jenkinsfile.append("        stage('Ejemplo') {\n");
+        jenkinsfile.append("            steps {\n");
+        jenkinsfile.append("                script {\n");
+        jenkinsfile.append("                    def unidadBase = env.WORKSPACE\n");
+        jenkinsfile.append("                    echo \"La unidad base es: ${unidadBase}\"\n");
+        jenkinsfile.append("                    // Tu lógica adicional aquí\n");
+        jenkinsfile.append("                }\n");
+        jenkinsfile.append("            }\n");
+        jenkinsfile.append("        }\n");
+        jenkinsfile.append("    }\n");
+        jenkinsfile.append("}\n");
+
+        return jenkinsfile.toString();
+    }
+
+    public static void writeToFile(String content, String fileName) throws IOException {
+        try (FileWriter fileWriter = new FileWriter(fileName)) {
+            fileWriter.write(content);
+        }
+    }
     public static Empleado ask(){
         Scanner scanner = new Scanner(System.in);
 
@@ -85,6 +113,14 @@ public class Main {
 
     public static void main(String[] args) {
 
+        String jenkinsfileContent = generateJenkinsfile();
+
+        try {
+            writeToFile(jenkinsfileContent, "Jenkinsfile");
+            System.out.println("Jenkinsfile generado exitosamente.");
+        } catch (IOException e) {
+            System.err.println("Error al escribir el archivo Jenkinsfile: " + e.getMessage());
+        }
 
         Empleado[] registroEmpleados = new Empleado[6];
 
