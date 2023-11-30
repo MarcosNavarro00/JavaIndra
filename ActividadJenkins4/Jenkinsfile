@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                script {
+                    git branch: 'rama/ActividadJenkins4', url: 'https://github.com/MarcosNavarro00/JavaIndra.git'
+                }
+            }
+        }
+
+        stage('Build') {
+            steps {
+                script {
+                    sh 'javac InfraccionesSalariales.java'
+                }
+            }
+        }
+
+        stage('Run Java Program') {
+            steps {
+                script {
+                    sh 'java InfraccionesSalariales'
+                }
+            }
+        }
+    }
+}
