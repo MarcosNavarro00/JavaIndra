@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'javac InfraccionesSalariales.java'
+                    sh 'javac ArchivoJenkins4.java'
                 }
             }
         }
