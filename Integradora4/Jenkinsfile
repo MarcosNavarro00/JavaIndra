@@ -13,8 +13,7 @@ pipeline {
         stage('Solucion') {
             steps {
                 script {
-                    def sol = "
-Pelicula{titulo='Avatar', espectadores=50000, salas=5000, gananciaBruta=250000000, gananciaNeta=200000000}
+                    def sol = "Pelicula{titulo='Avatar', espectadores=50000, salas=5000, gananciaBruta=250000000, gananciaNeta=200000000}
 Pelicula{titulo='Avengers:Endgame', espectadores=45000, salas=4500, gananciaBruta=202500000, gananciaNeta=162000000}
 Pelicula{titulo='Avatar:The_Way_of_Water', espectadores=40000, salas=4000, gananciaBruta=160000000, gananciaNeta=128000000}
 Pelicula{titulo='Titanic', espectadores=35000, salas=3500, gananciaBruta=122500000, gananciaNeta=98000000}
