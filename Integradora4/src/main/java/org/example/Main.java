@@ -111,7 +111,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        String sol = "\"\"\"";
+        String sol = "\"\"";
 
         Pelicula[] peliculas = getTxt("datos.txt");
 
@@ -125,7 +125,7 @@ public class Main {
         System.out.println("Solucion: " + sol);
 
 
-        Vista v1 = new Vista(sol+"\"\"\"");
+        Vista v1 = new Vista(sol+"\"\"");
 
         v1.ejecutarVista();
 
