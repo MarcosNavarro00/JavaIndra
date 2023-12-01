@@ -13,7 +13,7 @@ pipeline {
         stage('Solucion') {
             steps {
                 script {
-                    def sol = "Pelicula{titulo='Avatar', espectadores=50000, salas=5000, gananciaBruta=250000000, gananciaNeta=200000000}
+                    def sol = """Pelicula{titulo='Avatar', espectadores=50000, salas=5000, gananciaBruta=250000000, gananciaNeta=200000000}
 Pelicula{titulo='Avengers:Endgame', espectadores=45000, salas=4500, gananciaBruta=202500000, gananciaNeta=162000000}
 Pelicula{titulo='Avatar:The_Way_of_Water', espectadores=40000, salas=4000, gananciaBruta=160000000, gananciaNeta=128000000}
 Pelicula{titulo='Titanic', espectadores=35000, salas=3500, gananciaBruta=122500000, gananciaNeta=98000000}
@@ -22,7 +22,7 @@ Pelicula{titulo='Avengers:Infinity_War', espectadores=25000, salas=2500, gananci
 Pelicula{titulo='Spider-Man:No_Way_Home', espectadores=20000, salas=2000, gananciaBruta=40000000, gananciaNeta=32000000}
 Pelicula{titulo='Jurassic_World', espectadores=15000, salas=1500, gananciaBruta=22500000, gananciaNeta=18000000}
 Pelicula{titulo='The_Lion_King', espectadores=10000, salas=1000, gananciaBruta=10000000, gananciaNeta=8000000}
-Pelicula{titulo='The_Avengers', espectadores=5000, salas=500, gananciaBruta=2500000, gananciaNeta=2000000}"
+Pelicula{titulo='The_Avengers', espectadores=5000, salas=500, gananciaBruta=2500000, gananciaNeta=2000000}"""
                     echo "La solución es: ${sol}"
                     // Tu lógica adicional aquí
                 }
