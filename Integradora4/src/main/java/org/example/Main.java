@@ -41,42 +41,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static String generateJenkinsfile(String sol) {
-        StringBuilder jenkinsfile = new StringBuilder();
 
-        jenkinsfile.append("pipeline {\n");
-        jenkinsfile.append("    agent any\n");
-        jenkinsfile.append("    stages {\n");
-        jenkinsfile.append("        stage('Ejemplo') {\n");
-        jenkinsfile.append("            steps {\n");
-        jenkinsfile.append("                script {\n");
-        jenkinsfile.append("                    def unidadBase = env.WORKSPACE\n");
-        jenkinsfile.append("                    echo \"La unidad base es: ${unidadBase}\"\n");
-        jenkinsfile.append("                    // Tu lógica adicional aquí\n");
-        jenkinsfile.append("                }\n");
-        jenkinsfile.append("            }\n");
-        jenkinsfile.append("        }\n");
-        jenkinsfile.append("        stage('Solucion') {\n");
-        jenkinsfile.append("            steps {\n");
-        jenkinsfile.append("                script {\n");
-        jenkinsfile.append("                    def sol = \"").append(sol).append("\"\n");
-        jenkinsfile.append("                    echo \"La solución es: ${sol}\"\n");
-        jenkinsfile.append("                    // Tu lógica adicional aquí\n");
-        jenkinsfile.append("                }\n");
-        jenkinsfile.append("            }\n");
-        jenkinsfile.append("        }\n");
-        jenkinsfile.append("    }\n");
-        jenkinsfile.append("}\n");
-
-        return jenkinsfile.toString();
-    }
-
-
-    public static void writeToFile(String content, String fileName) throws IOException {
-        try (FileWriter fileWriter = new FileWriter(fileName)) {
-            fileWriter.write(content);
-        }
-    }
     public static Pelicula[] getTxt(String rutaArchivo) {
         try {
             File archivo = new File(rutaArchivo);
@@ -146,7 +111,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        String sol = "";
+        String sol = "\"\"\"";
 
         Pelicula[] peliculas = getTxt("datos.txt");
 
@@ -154,18 +119,15 @@ public class Main {
 
         for (int i = 0; i<p23.length; i++){
             System.out.println("Peliculas 2023: " + p23[i].toString());
-            sol += p23[i].toString();
+            sol +=  p23[i].toString();
         }
 
         System.out.println("Solucion: " + sol);
-        String jenkinsfileContent = generateJenkinsfile(sol);
-        try {
-            writeToFile(jenkinsfileContent, "Jenkinsfile");
-            System.out.println("Jenkinsfile generado exitosamente.");
-        } catch (IOException e) {
-            System.err.println("Error al escribir el archivo Jenkinsfile: " + e.getMessage());
-        }
 
+
+        Vista v1 = new Vista(sol+"\"\"\"");
+
+        v1.ejecutarVista();
 
 
     }
