@@ -1,0 +1,3 @@
+Loan{title='El teorema de Fermat', autor='Simon Singh', requestDate=2023-05-01, deliveryDate=2023-05-10, state=PRESTADO, DNI='12345678', Dias desde que se presto el libro ='217', Estado del prestamo ='Vencido', Dinero de multa='217.0', Cliente Moroso='true'}
+Loan{title='Correspondencia', autor='Sigmon Freud', requestDate=2023-05-10, deliveryDate=2023-05-20, state=Prestado, DNI='23545789', Dias desde que se presto el libro ='208', Estado del prestamo ='Vencido', Dinero de multa='208.0', Cliente Moroso='true'}
+Loan{title='Letras de amor', autor='Gustavo Vargas', requestDate=2023-05-18, deliveryDate=2023-05-28, state=Prestado, DNI='3557789', Dias desde que se presto el libro ='200', Estado del prestamo ='Vencido', Dinero de multa='200.0', Cliente Moroso='true'}
